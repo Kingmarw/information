@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body{
+  background-image: url("https://res.cloudinary.com/ddzvcwo9v/image/upload/v1738940473/naj8v6iufwgumqfrfrzt.gif");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+.container{
+  display: flex;
+  width: 90%;
+  height: 50vw;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  overflow-y: scroll;
+}
+.container::-webkit-scrollbar{
+  scrollbar-width: 20px;
+}
+.icons-container{
+  height: auto;
+  background: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(19px) saturate(100%);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  margin-left: auto;
+  margin-right: 12px;
+}
+.p1{
+  border-radius: 20px;
+  margin-left: 9px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.p1:hover{
+  transform: scale(1.1);
+}
+.p0{
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.p0:hover{
+  transform: scale(1.1);
+}
+.img{
+  width: auto;
+}
+.dis{
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  margin: auto;
+  overflow: hidden;
+}
+.disny{
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: auto;
+  transition: transform 0.3s ease-in-out;
+}
+.dis .p{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgb(0, 0, 0),transparent);
+  color: white;
+  padding: 20px;
+  opacity: 0;
+  text-align: start;
+  font-family: Poppins,sans-serif;
+  font-size: 3rem;
+  transition: opacity 0.3s ease-in-out;
+}
+.dis:hover .p{
+  opacity: 1;
+}
+.dis:hover .disny{
+  transform: scale(1.1);
+}
+.c2{
+  width: 800px;
+  background: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(19px);
+  border-radius: 15px;
+  font-family: Poppins,sans-serif;
+}
+.h2{
+  font-family: Poppins;
+}
+.footer p{
+  font-family: Poppins,sans-serif;
+}
+::-webkit-scrollbar{
+  display: none;
+}
